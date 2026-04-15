@@ -47,7 +47,7 @@ public class BoardApiController {
 		//int total = 500;
 		Map<String, Object> response = new HashMap<String, Object>();
 		response.put("list", list);
-		response.put("pageMarker", new PageResponse(cri, total));
+		response.put("pageMaker", new PageResponse(cri, total));
 		
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
