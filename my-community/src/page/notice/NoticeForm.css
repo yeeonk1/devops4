@@ -1,0 +1,94 @@
+.form-container {
+  max-width: 700px;
+  width: 95%;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.member-title {
+  font-size: 26px;
+  color: #333;
+  margin-button: 30px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  board-radius: 8px;
+  font-size: 15px;
+  color: #444;
+  background-color: #fff;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.form-textarea {
+  min-height: 250px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.form-input:read-only {
+  background-color: #f8f9fa;
+  color: #888;
+  cursor: not-allowed;
+}
+
+.form-submit-btn {
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: white;
+}
+
+button[type="submit"].form-submit-btn {
+  background-color: #4a90e2;
+  flex: 2;
+}
+
+button[type="submit"].form-submit-btn:hover {
+  background-color: #357abd;
+}
+
+.form-submit-btn:nth-child(2) {
+  background-color: #e74c3c;
+}
+
+.form-submit-btn:nth-child(2):hover {
+  background-color: #c0392b;
+}
+
+.form-submit-btn:last-child {
+  background-color: #95a6a6;
+}
+
+.form-submit-btn:last-child:hover {
+  background-color: #7f8c8d;
+}
+
+.form-submit-btn:active {
+  transform: scale(0.9);
+}

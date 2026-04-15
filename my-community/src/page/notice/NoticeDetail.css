@@ -1,0 +1,105 @@
+.detail-container {
+  max-width: 800px;
+  width: 95%;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.detail-header {
+  border-bottom: 2px solid #333;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.detail-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.detail-meta {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+.detail-meta span {
+  position: relative;
+}
+
+.detail-meta span:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 12px;
+  background-color: #ddd;
+}
+
+.detail-content {
+  min-height: 300px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  white-space: pre-wrap;
+  word-break: break-all;
+  padding: 10px 0;
+}
+
+.detail-btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.detail-btns button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-gray {
+  background-color: #f1f3f5;
+  color: #495057;
+}
+
+.btn-gray:hover {
+  background-color: #e9ecef;
+}
+
+.btn-blue {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.btn-blue:hover {
+  background-color: #357abd;
+}
+
+.btn-red {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-red:hover {
+  background-color: #c0392b;
+}
+
+div.detail-container:has(.detail-header) {
+}
